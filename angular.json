@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "firt-app"
+  "defaultProject": "firt-app",
+  "cli": {
+    "analytics": "9eedf524-82cd-4a3f-a3d3-18d1bd66c14c"
+  }
 }
