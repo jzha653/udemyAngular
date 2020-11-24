@@ -1,2 +1,10 @@
+<!--One Way Data Binding-->
+<input type ="text" class="form-control" (input)="changeinput($event)">
+<!--Two Way Data Binding-->
+<input type ="text" class="form-control" [(ngModel)]="dogcount" >
+
+<button class="btn btn-primary" [disabled] = "!allowNew" (click)="changeDogCount()">Add dog</button>
+<p>{{dogcount}}</p>
+
 <app-server></app-server>
 <app-server></app-server>
