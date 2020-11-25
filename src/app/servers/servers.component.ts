@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNew = false
   dogcount = "10 dogs"
+  create = false
+  servers = ['test1','test2'];
   constructor() {
     setTimeout(()=>{this.allowNew = true;},2000)
   }
@@ -15,10 +17,8 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {
   }
   changeDogCount(){
-    this.dogcount = "20 dogs"
+    this.create = true
+    this.servers.push(this.dogcount)
   }
-  changeinput(event: any){
-    this.dogcount = (<HTMLInputElement>event.target).value
 
-  }
 }
